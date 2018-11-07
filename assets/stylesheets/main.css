@@ -381,4 +381,15 @@ Social Media
     border-radius: .4rem;
     width: 2rem;
     height: 2rem;
+    box-shadow: .1rem .1rem black;
+    transition: all ease-in .2s;
+
+}
+
+.social-media-icon:hover {
+    box-shadow: none;
+}
+
+.social-media-icon:active {
+    background-color: #BDBDBD;
 }
