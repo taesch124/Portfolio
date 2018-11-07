@@ -361,3 +361,24 @@ footer,
 
 
 
+
+
+/*
+=============================================
+Social Media
+=============================================
+*/
+
+.social-media {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.social-media-icon {
+    margin: 0 1rem;
+    background-color: white;
+    border-radius: .4rem;
+    width: 2rem;
+    height: 2rem;
+}
