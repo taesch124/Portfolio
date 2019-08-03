@@ -6,7 +6,7 @@ const lastName = document.getElementById('header_last_name');
 const nameText = document.getElementById('name_text');
 
 function shrinkName() {
-    const distY = wrapper.scrollTop - header.offsetHeight;
+    const distY = (wrapper.scrollTop - header.offsetHeight)/100;
 
     if (distY > 0) {
         lastName.classList.remove('new_line');
@@ -23,5 +23,5 @@ function shrinkName() {
 
 }
 
-window.addEventListener
+
 wrapper.addEventListener('scroll', function() {shrinkName();});

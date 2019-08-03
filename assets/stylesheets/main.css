@@ -28,7 +28,7 @@ footer {
 
 header,
 footer {
-    background-color: #1976D2;
+    background-color: #272727;
 }
 
 hr {
@@ -38,10 +38,13 @@ hr {
 
 
 .row_content {
-    background: #2196F3;
-    border-radius: .5em;
+    background: #FF652F;
     box-shadow: 3px 3px 3px #474545;
 }
+
+/* .row-content > * {
+    transform: skew(-3deg);
+} */
 
 .wrapper {
     display: flex;
@@ -78,9 +81,8 @@ hr {
 header,
 footer,
 .header_content,
-.footer_content,
-.row {
-    min-width: 768px;
+.footer_content {
+    min-width: 960px;
 }
 
 
@@ -135,7 +137,7 @@ h3 {
 }
 
 p,
-h9,
+h9
  {
     font-family: 'Montserrat', sans-serif;
 }
@@ -147,10 +149,11 @@ textarea,
 }
 
 h1 {
-    border-top: .15em solid #212121;
+    border-top: .15em solid #FF652F;
     font-size: 3.5em;
     line-height: 1em;
-    color: #212121;
+    color: #FF652F;
+    letter-spacing: .2rem;
 }
 
 .smaller_header {
@@ -166,6 +169,7 @@ h2 {
     border-bottom: 2px solid #BDBDBD;
     overflow: hidden;
     margin: 0 1em .5em 1em;
+    text-align: center;
 }
 
 .project_gallery h2,
@@ -196,7 +200,7 @@ label {
 
 a {
     font-size: 1.05em;
-    color: black;
+    color: #FF652F;
     text-decoration: none;
     font-weight: bold;
 }
@@ -256,6 +260,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000000;
+    
 }
 
 .header_content {
@@ -361,6 +366,29 @@ footer,
 
 
 
+/*
+=============================================
+Buttons
+=============================================
+*/
+
+button {
+    min-width: 120px;
+    width: fit-content;
+    height: 100%;
+    background-color: #FFE400;
+    background-image: linear-gradient(to bottom right, #FF652F, #FFE400, #FF652F);
+    border: 1px solid black;
+    border-radius: 12px;
+    color: #272727;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom right, #FFE400, #FF652F, #FFE400);
+    transition: background-color .2s ease-in-out .2s;
+}
 
 
 /*
@@ -392,4 +420,36 @@ Social Media
 
 .social-media-icon:active {
     background-color: #BDBDBD;
+}
+
+
+
+/*
+=============================================
+Card
+=============================================
+*/
+
+.card {
+    border-radius: .5rem;
+    margin: 1rem;
+    background-color: #272727;
+    height: fit-content;
+    min-width: 240px;
+    width: fit-content;
+    -webkit-box-shadow: 4px 4px 2px 0px #27272794;
+    -moz-box-shadow: 4px 4px 2px 0px #27272794;
+    box-shadow: 4px 4px 2px 0px #27272794;
+}
+
+.card-content {
+    padding: .75rem;
+    max-width: 360px;
+}
+
+@media screen  and (min-width: 1120px) {
+    .card-content {
+        max-width: 480px;
+    }
+
 }

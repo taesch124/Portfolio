@@ -5,48 +5,75 @@ About Me
 */
 
 #portrait {
+    display: block;
     min-width: 240px;
-    width: 10vh;
+    max-width: 360px;
     height: auto;
-    margin: 0 1.5em .75em 0;
-    border-radius: 5px;
+    border-radius: 60%;
+    margin: 0 auto;
 }
 
 .bio {
     padding: 0 1.5em .5em 1.5em;
+    text-align: left;
 }
+
+.about-me{
+    background: url('./../images/backgrounds/about-me-background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#about-me-container {
+    height: 100%;
+    min-height: 420px;
+    background: #222222dc;
+}
+
 
 
 
 @media screen and (min-width: 769px) {
 
-    .about_me {
-        position: relative;
-        min-height: fit-content;
-        height: fit-content;
+    #about-me-container {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0 auto;
+        justify-content: center;
+        
     }
 
-    #about_me_header {
+    .portrait-container {
+        flex: 2 1 0;
+        align-self: center;
+        justify-self: center;
+        max-width: 420px;
+        margin: 0 2rem;
+        transition: margin 1s;
+    }
+
+    .about-me-content {
+        flex: 5 0 0;
+        margin-right: 2rem;
+        transition: margin .75s;
+    }
+
+    #about-me-header {
         padding-top: 2em;
     }
 
-    #portrait {
-        float: left;
+
+
+}
+
+@media screen  and (min-width: 1120px) {
+    .portrait-container {
+        margin: 0 5rem 0 8rem;
     }
 
-    .bio {
-        padding-left: 4.5em;
+    .about-me-content {
+        margin-right: 8rem;
     }
-
-    #about_me_content {
-        position: relative;
-        top: -1.5em;
-        bottom: 0;  
-        left: -2em;
-        right: 0;
-        height: fit-content;
-    }
-
 }
 
 @media screen  and (max-width: 768px) {
@@ -57,9 +84,14 @@ About Me
     }
 
     #portrait {
+        position: inherit;
         min-width: 120px;
         width: 50%;
         align-self: center;
-        margin: 1.25em 25% .75em 25%;
+        margin: 0 25% .75em 25%;
+    }
+
+    .portrait-container {
+        padding-top: 2rem;
     }
 }

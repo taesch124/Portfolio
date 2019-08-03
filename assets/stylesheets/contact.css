@@ -33,10 +33,10 @@ textarea:-webkit-autofill {
     transition: border-color .2s ease-in-out 0s;
 }
 
-button:hover {
+/* button:hover {
     background-color: #00DD6D;
     transition: background-color .1s ease-in-out .1s;
-}
+} */
 
 #clear_button button:hover {
     background-color: red;
@@ -53,8 +53,7 @@ button:active {
 }
 
 input,
-textarea,
-button {
+textarea {
     display: block;
     width: 100%;
     padding: .5em;
